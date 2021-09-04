@@ -7,7 +7,7 @@
 - Github: [ivan-pogorelov](https://github.com/ivan-pogorelov)
 
 ## ABOUT MYSELF
-I decided to take courses in the RS School and lessons of English to become a frontend developer, because my brother inspired me to be the same.
+I am 24 years old, I work as a portal administrator. My current job is not capable of giving a job in the direction in which I want to develop. Having decided to change direction, I started to study English and the basics of programming in my spare time after work to get a certificate at RS-school. I want to become a frontend developer, because my brother inspired me to be the same like he.
 ## SKILLS:
 
 - HMTL, CSS 
