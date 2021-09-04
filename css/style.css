@@ -1,0 +1,22 @@
+body {
+    background-color: rgba(96, 100, 110, 0.616);
+}
+
+.container {
+    margin: 30px auto;
+    /* box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%); */
+    font-size: 18px;
+    width: 1024px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+aside {
+    background-color: rgb(226, 190, 190);
+}
+
+main {
+    background-color: #fff;
+}

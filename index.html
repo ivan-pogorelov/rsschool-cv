@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <section class="container"> 
+        <div class="wrapper">
+            <aside>
+                <img src="./assets/img/ava.jpeg" alt="ava" width="300px" height="300px">
+                <div class="contacts">
+                    <h3>CONTACTS</h3>
+                    <ul>
+                        <li>VK: <a href="#">Hardayushka</a></li>
+                        <li>E-mail: <a href="#">ivanpogorelov97a@gmail.com</a></li>
+                        <li>Github: <a href="#">ivan-pogorelov</a></li>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <h3>SKILLS</h3>
+                    <ul>
+                        <li>HMTL, CSS</li>
+                        <li>JS (Basics)</li>
+                        <li>Bootstrap 4</li>
+                        <li>Sublime, VSC</li>
+                        <li>Git, GitHub</li>
+                    </ul>
+                </div>
+                <div class="languages">
+                    <h3>LANGUAGES</h3>
+                    <p class="language-name">ENGLISH</p>
+                    <p>A2</p>
+    
+                    <p class="language-name">RUSSIAN</p>
+                    <p>Native</p>
+                </div>
+            </aside>
+    
+            <main>
+                <header class="header">
+                    <h1>IVAN POGORELOV</h1>
+                    <h2>FUTURE FRONT-END DEVELOPER</h2>
+                </header>
+                <div class="about-myself">
+                    <h3>ABOUT MY SELF</h3>
+                    <p>I am 24 years old, I work as a portal administrator. My current job is not capable of giving a job in the direction in which I want to develop. Having decided to change direction, I started to study English and the basics of programming in my spare time after work to get a certificate at RS-school. I want to become a frontend developer, because my brother inspired me to be the same like he.</p>
+                </div>
+                <div class="education">
+                    <h3>EDUCATION</h3>
+                    <strong>Taganrog Technological Institute of Southern Federal University, Taganrog</strong>
+                    <p>2017 - 2021 (Computer and Software Engineering)</p>
+    
+                    <strong>Krasnodar College of Electronic Instrumentation</strong>
+                    <p>2013 - 2017 Information Security Automated Systems, Information Security Technician</p>
+                </div>
+                <div class="courses">
+                    <h3>COURSES</h3>
+                    <ul class="courses__list">
+                        <li>HTML/CSS/JS Tutorials on code-basics.com</li>
+                        <li>JavaScript Manual on learnjavascript.ru</li>
+                        <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
+                    </ul>
+                </div>
+                <div class="code-example">
+                    <h3>CODE EXAMPLE</h3>
+                    <p>My task is to rotate a matrix 90 degree to the left.</p>
+                    <pre>
+                        <code>
+                            let rotateMatrix = (arr) => {
+                                let result = [];
+                            
+                                for (let i = arr[0].length - 1; i >= 0; i--) {
+                                    let temp = [];
+                                    for (let j = 0; j < arr.length; j++) {
+                                        temp.push(arr[j][i]);
+                                    }
+                                    result.push(temp);
+                                }
+                              
+                                return result;
+                            }
+                            console.log(rotateMatrix([[-1,4,5],[2,3,4]]))
+                        </code>
+                    </pre>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>
