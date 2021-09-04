@@ -1,6 +1,6 @@
 # Ivan Pogorelov
 
-## Contact info:
+## CONTACT INFO:
 
 - VK: [Hardayushka](https://vk.com/hardayushka)
 - E-mail: ivanpogorelov97a@gmail.com
@@ -8,7 +8,7 @@
 
 ## ABOUT MYSELF
 I decided to take courses in the RS School and lessons of English to become a frontend developer, because my brother inspired me to be the same.
-## Skills:
+## SKILLS:
 
 - HMTL, CSS 
 - JS (Basics)
@@ -16,7 +16,7 @@ I decided to take courses in the RS School and lessons of English to become a fr
 - Sublime, Visual studio code
 - Git, GitHub
 
-## Code examples:
+## CODE EXAMPLES:
 
 *My task is to rotate a matrix 90 degree to the left.*
 
@@ -37,7 +37,7 @@ let rotateMatrix = (arr) => {
 console.log(rotateMatrix([[-1,4,5],[2,3,4]]))
 ```
 
-## Education
+## EDUCATION
 
 ### Taganrog Technological Institute of Southern Federal University, Taganrog
 - 2017 - 2021 (Computer and Software Engineering)
@@ -52,9 +52,9 @@ console.log(rotateMatrix([[-1,4,5],[2,3,4]]))
 
 ## LANGUAGES
 
-### English
+#### English
 - Speaking: A2
 - Writing: A1+
 
-### RUSSIAN
+#### RUSSIAN
 - Native
