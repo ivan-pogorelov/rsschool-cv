@@ -1,0 +1,229 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #a5a19f;
+    color: #111416;
+}
+
+.container {
+    margin: 30px auto 0 auto;
+    /* box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%); */
+    font-size: 18px;
+    width: 1024px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+/* ASIDE */
+:root {
+    --aside-color:rgb(255, 255, 255);
+}
+
+aside {
+    background-color: #2c2b2d;
+    color: var(--aside-color);
+}
+
+aside h3 {
+    color: var(--aside-color);
+    border-bottom: 2px solid #f99b0b;
+    margin: 40px 0;
+}
+
+.aside__wrapper {
+    margin-left: 70px;
+}
+
+.skill__list,
+.contacts__list,
+.courses__list {
+    list-style: none;
+    line-height: 35px;
+}
+
+.skill__list li, 
+.languages li, 
+.contacts__list li,
+.courses__list li {
+    padding-left: 50px;
+    margin-bottom: 10px;
+    background-size: 30px;
+}
+
+.skills__html {
+    background-image: url(../assets/img/html.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__css {
+    background-image: url(../assets/img/css.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__js {
+    background-image: url(../assets/img/JS.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__bs {
+    background-image: url(../assets/img/bootstrap.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__vsc {
+    background-image: url(../assets/img/vsc.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__git {
+    background-image: url(../assets/img/github.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__figma {
+    background-image: url(../assets/img/figma.svg);
+    background-repeat: no-repeat;
+}
+
+.languages__english {
+    background-image: url(../assets/img/english.svg);
+    background-repeat: no-repeat;
+}
+
+.languages__russia {
+    background-image: url(../assets/img/russia.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__vk {
+    background-image: url(../assets/img/vk.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__gmail {
+    background-image: url(../assets/img/gmail.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__discord {
+    background-image: url(../assets/img/discord.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__list li a,
+.languages__list {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 60px;
+    margin: 75px 0;
+    height: 150px;
+    background-color: #f99b0b;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 45px;
+    letter-spacing: 4px;
+}
+
+header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding-bottom: 15px;
+    color: #111416;
+    border-bottom: 2px solid #2c2b2d;
+}
+
+/* MAIN */
+
+main {
+    background-color: #fcfcfc;
+    letter-spacing: 0.6px;
+}
+
+.main__wrapper {
+    padding: 0 60px;
+}
+
+.main__wrapper h3 {
+    font-weight: 700;
+}
+
+.about-myself p {
+    line-height: 26px;
+    text-align: justify;
+}
+
+.education strong {
+    display: block;
+    font-weight: 700;
+    margin: 30px 0 5px 0;
+}
+
+.education p span {
+    color: #f99b0b;
+}
+
+.courses__code-basics {
+    background-image: url(../assets/img/code-basics.png);
+    background-repeat: no-repeat
+}
+
+.courses__learnjavasript {
+    background-image: url(../assets/img/learnjavascript.svg);
+    background-repeat: no-repeat;
+    background-size: 40px !important;
+}
+
+.courses__rs-school {
+    background-image: url(../assets/img/courses__logo-rs.svg);
+    background-repeat: no-repeat;
+}
+
+/* FOOTER */
+
+ footer {
+    background-color: #f99b0b;
+    margin: 0 auto 30px auto;
+    padding: 15px 0px;
+    font-size: 18px;
+    width: 1024px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.footer__wrapper a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__logo {
+    height: 26px;
+    width: 73px;
+}
+
+.footer__git img {
+    margin-right: 10px;
+}
