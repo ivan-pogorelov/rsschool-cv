@@ -1,5 +1,7 @@
 body {
-    background-color: rgba(96, 100, 110, 0.616);
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #a5a19f;
+    color: #111416;
 }
 
 .container {
@@ -27,13 +29,13 @@ main {
 }
 
 aside {
-    background-color: rgba(19, 16, 16, 0.774);
+    background-color: #2c2b2d;
     color: var(--aside-color);
 }
 
 aside h3 {
     color: var(--aside-color);
-    border-bottom: 2px solid rgb(219, 207, 31);
+    border-bottom: 2px solid #f99b0b;
     margin: 40px 0;
 }
 
@@ -41,12 +43,15 @@ aside h3 {
     margin-left: 70px;
 }
 
-.skill__list {
+.skill__list,
+.contacts__list {
     list-style: none;
     line-height: 35px;
 }
 
-.skill__list li {
+.skill__list li, 
+.languages li, 
+.contacts__list li {
     padding-left: 50px;
     margin-bottom: 10px;
     background-size: 30px;
@@ -54,6 +59,11 @@ aside h3 {
 
 .skills__html {
     background-image: url(../assets/img/html.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__css {
+    background-image: url(../assets/img/css.svg);
     background-repeat: no-repeat;
 }
 
@@ -82,13 +92,37 @@ aside h3 {
     background-repeat: no-repeat;
 }
 
-.skills {
-
+.languages__english {
+    background-image: url(../assets/img/english.svg);
+    background-repeat: no-repeat;
 }
 
-.contacts {
-
+.languages__russia {
+    background-image: url(../assets/img/russia.svg);
+    background-repeat: no-repeat;
 }
+
+.contacts__vk {
+    background-image: url(../assets/img/vk.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__gmail {
+    background-image: url(../assets/img/gmail.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__discord {
+    background-image: url(../assets/img/discord.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__list li a {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+/* HEADER */
 
 header {
     display: flex;
@@ -97,27 +131,31 @@ header {
     padding: 0 60px;
     margin: 75px 0;
     height: 150px;
-    background-color: rgb(201, 201, 211);
+    background-color: #f99b0b;
     font-size: 46px;
+    line-height: 45px;
+    letter-spacing: 4px;
 }
 
 header h2 {
     font-size: 32px;
+    letter-spacing: 2px;
 }
 
 h3 {
     font-size: 24px;
     font-weight: 500;
+    letter-spacing: 2px;
     margin: 20px 0;
     padding-bottom: 15px;
-    color: rgb(138, 113, 113);
-    border-bottom: 2px solid grey;
+    color: #111416;
+    border-bottom: 2px solid #2c2b2d;
 }
 
 /* FOOTER */
 
  footer {
-    background-color: rgba(19, 16, 16, 0.774);
+    background-color: #f99b0b;
     margin: 0 auto 30px auto;
     padding: 15px 0px;
     font-size: 18px;
