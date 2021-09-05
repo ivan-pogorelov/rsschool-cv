@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     /* box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%); */
     font-size: 18px;
     width: 1024px;
@@ -13,10 +13,135 @@ body {
     display: flex;
 }
 
-aside {
-    background-color: rgb(226, 190, 190);
-}
-
 main {
     background-color: #fff;
+}
+
+.main__wrapper {
+    padding: 0 60px;
+}
+
+/* ASIDE */
+:root {
+    --aside-color:rgb(255, 255, 255);
+}
+
+aside {
+    background-color: rgba(19, 16, 16, 0.774);
+    color: var(--aside-color);
+}
+
+aside h3 {
+    color: var(--aside-color);
+    border-bottom: 2px solid rgb(219, 207, 31);
+    margin: 40px 0;
+}
+
+.aside__wrapper {
+    margin-left: 70px;
+}
+
+.skill__list {
+    list-style: none;
+    line-height: 35px;
+}
+
+.skill__list li {
+    padding-left: 50px;
+    margin-bottom: 10px;
+    background-size: 30px;
+}
+
+.skills__html {
+    background-image: url(../assets/img/html.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__js {
+    background-image: url(../assets/img/JS.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__bs {
+    background-image: url(../assets/img/bootstrap.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__vsc {
+    background-image: url(../assets/img/vsc.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__git {
+    background-image: url(../assets/img/github.svg);
+    background-repeat: no-repeat;
+}
+
+.skills__figma {
+    background-image: url(../assets/img/figma.svg);
+    background-repeat: no-repeat;
+}
+
+.skills {
+
+}
+
+.contacts {
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 60px;
+    margin: 75px 0;
+    height: 150px;
+    background-color: rgb(201, 201, 211);
+    font-size: 46px;
+}
+
+header h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 20px 0;
+    padding-bottom: 15px;
+    color: rgb(138, 113, 113);
+    border-bottom: 2px solid grey;
+}
+
+/* FOOTER */
+
+ footer {
+    background-color: rgba(19, 16, 16, 0.774);
+    margin: 0 auto 30px auto;
+    padding: 15px 0px;
+    font-size: 18px;
+    width: 1024px;
+}
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.footer__wrapper a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer__logo {
+    height: 26px;
+    width: 73px;
+}
+
+.footer__git img {
+    margin-right: 10px;
 }
