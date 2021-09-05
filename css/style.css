@@ -15,13 +15,6 @@ body {
     display: flex;
 }
 
-main {
-    background-color: #fff;
-}
-
-.main__wrapper {
-    padding: 0 60px;
-}
 
 /* ASIDE */
 :root {
@@ -44,14 +37,16 @@ aside h3 {
 }
 
 .skill__list,
-.contacts__list {
+.contacts__list,
+.courses__list {
     list-style: none;
     line-height: 35px;
 }
 
 .skill__list li, 
 .languages li, 
-.contacts__list li {
+.contacts__list li,
+.courses__list li {
     padding-left: 50px;
     margin-bottom: 10px;
     background-size: 30px;
@@ -117,7 +112,8 @@ aside h3 {
     background-repeat: no-repeat;
 }
 
-.contacts__list li a {
+.contacts__list li a,
+.languages__list {
     color: #fcfcfc;
     text-decoration: none;
 }
@@ -133,12 +129,14 @@ header {
     height: 150px;
     background-color: #f99b0b;
     font-size: 46px;
+    font-weight: 900;
     line-height: 45px;
     letter-spacing: 4px;
 }
 
 header h2 {
     font-size: 32px;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
@@ -150,6 +148,52 @@ h3 {
     padding-bottom: 15px;
     color: #111416;
     border-bottom: 2px solid #2c2b2d;
+}
+
+/* MAIN */
+
+main {
+    background-color: #fcfcfc;
+    letter-spacing: 0.6px;
+}
+
+.main__wrapper {
+    padding: 0 60px;
+}
+
+.main__wrapper h3 {
+    font-weight: 700;
+}
+
+.about-myself p {
+    line-height: 26px;
+    text-align: justify;
+}
+
+.education strong {
+    display: block;
+    font-weight: 700;
+    margin: 30px 0 5px 0;
+}
+
+.education p span {
+    color: #f99b0b;
+}
+
+.courses__code-basics {
+    background-image: url(../assets/img/code-basics.png);
+    background-repeat: no-repeat
+}
+
+.courses__learnjavasript {
+    background-image: url(../assets/img/learnjavascript.svg);
+    background-repeat: no-repeat;
+    background-size: 40px !important;
+}
+
+.courses__rs-school {
+    background-image: url(../assets/img/courses__logo-rs.svg);
+    background-repeat: no-repeat;
 }
 
 /* FOOTER */
