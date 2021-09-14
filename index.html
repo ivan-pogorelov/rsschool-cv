@@ -8,6 +8,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,7 @@
     <div class="container"> 
         <div class="wrapper">
             <aside>
-                <img src="./assets/img/ava.jpeg" alt="ava" width="300" height="300">
+                <img class="ava" src="./assets/img/ava.jpeg" alt="ava">
                 <div class="aside__wrapper">
                     
                     <div class="skills">
@@ -87,26 +89,69 @@
                     <div class="code-example">
                         <h3>CODE EXAMPLE</h3>
                         <p>My task is to rotate a matrix 90 degree to the left.</p>
-                        <pre>
-                            <code>
-                                let rotateMatrix = (arr) => {
-                                    let result = [];
-                                
-                                    for (let i = arr[0].length - 1; i >= 0; i--) {
-                                        let temp = [];
-                                        for (let j = 0; j &lt; arr.length; j++) {
-                                            temp.push(arr[j][i]);
-                                        }
-                                        result.push(temp);
-                                    }
-                                  
-                                    return result;
-                                }
-                                console.log(rotateMatrix([[-1,4,5],[2,3,4]]))
-                            </code>
-                        </pre>
+    <pre>  
+    <code>
+        let rotateMatrix = (arr) => {
+            let result = [];
+        
+            for (let i = arr[0].length - 1; i >= 0; i--) {
+                let temp = [];
+                for (let j = 0; j &lt; arr.length; j++) {
+                    temp.push(arr[j][i]);
+                }
+                result.push(temp);
+            }
+            
+            return result;
+        }
+        console.log(rotateMatrix([[-1,4,5],[2,3,4]]))
+    </code>
+    </pre>
+                    <div class="code-tasks">
+                        <p>Creating a video player using <span>JavaScript</span></p>
+                        <a href="https://rolling-scopes-school.github.io/ivan-pogorelov-JSFEPRESCHOOL/custom-video-player/" target="_blank" class="task__video-player tasks"></a>
+
+                        <p>Make a <span>JavaScript</span> Drum Kit</p>
+                        <a href="https://rolling-scopes-school.github.io/ivan-pogorelov-JSFEPRESCHOOL/drum-kit/" target="_blank" class="task__drum-kit tasks"></a>
+
+                        <p>Creating landing using <span>HTML/CSS/JS</span></p>
+                        <a href="https://rolling-scopes-school.github.io/ivan-pogorelov-JSFEPRESCHOOL/museum/" target="_blank" class="task__museum-stage0 tasks"></a>
+                    </div>
                     </div>
                 </div>
+
+                <section>
+                    
+                    <div class="skills">
+                        <h3>SKILLS</h3>
+                        <ul class="skill__list">
+                            <li class="skills__html">HMTL</li>
+                            <li class="skills__css">CSS</li>
+                            <li class="skills__bs">Bootstrap 4</li>
+                            <li class="skills__js">JS (Basics)</li>
+                            <li class="skills__git">Git, GitHub</li>
+                            <li class="skills__figma">Figma</li>
+                            <li class="skills__vsc">Visual Studio Code</li>
+                        </ul>
+                    </div>
+                    <div class="languages">
+                        <h3>LANGUAGES</h3>
+                        <ul class="languages__list">
+                            <li class="languages__english">A2</li>
+                            <li class="languages__russia">Native</li>
+                        </ul>
+                    </div>
+
+                    <div class="contacts">
+                        <h3>CONTACTS</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__vk"><a href="https://vk.com/hardayushka">Visit my VK</a></li>
+                            <li class="contacts__gmail"><a href="mailto:ivanpogorelov97a@gmail.com">Click here</a></li>
+                            <li class="contacts__discord">Ivan Pogorelov#4546</li>
+                        </ul>
+                    </div>
+    
+                </section>
 
             </main>
         </div>
@@ -115,12 +160,15 @@
     <footer>
 
         <div class="footer__wrapper">
-            <a href="https://github.com/ivan-pogorelov" class="footer__git"><img src="./assets/img/github.svg" alt="GitHub">Visit my GitHub</a>
+            <a href="https://github.com/ivan-pogorelov" target="_blank" class="footer__git"><img src="./assets/img/github.svg" alt="GitHub">Visit my GitHub</a>
             <p>© 2021</p>
             <a href="https://rs.school/js/" class="footer__logo"><img src="./assets/img/rsschool.svg" alt="logo"></a>
         </div>
         
     </footer>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
 </body>
 </html>

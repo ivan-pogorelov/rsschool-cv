@@ -1,0 +1,58 @@
+@media (max-width: 992px) {
+    .container {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .wrapper {
+        display: block;
+    }
+    header {
+        margin: 0 0 45px 0;
+        padding: 0 30px;
+        letter-spacing: 2px;
+    }
+    header h1 {
+        font-size: 36px;
+    }
+    header h2 {
+        font-size: 22px;
+    }
+    aside {
+        display: none;
+    }
+    section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contacts__discord {
+        margin-bottom: 0 !important;
+        padding-bottom: 25px;
+    }
+    .main__wrapper {
+        padding: 0 30px;
+    }
+    footer {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    section {
+        flex-direction: column;
+    }
+    header {
+        letter-spacing: 1px;
+    }
+    header h1 {
+        font-size: 26px;
+    }
+    header h2 {
+        font-size: 18px;
+    }
+    .code-example code {
+        font-size: 14px;
+    }
+}
+

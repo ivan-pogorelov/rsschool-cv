@@ -6,15 +6,13 @@ body {
 
 .container {
     margin: 30px auto 0 auto;
-    /* box-shadow: 10px 10px 40px -1px rgb(0 0 0 / 23%); */
     font-size: 18px;
-    width: 1024px;
+    width: 90%;
 }
 
 .wrapper {
     display: flex;
 }
-
 
 /* ASIDE */
 :root {
@@ -26,7 +24,7 @@ aside {
     color: var(--aside-color);
 }
 
-aside h3 {
+aside h3, section h3 {
     color: var(--aside-color);
     border-bottom: 2px solid #f99b0b;
     margin: 40px 0;
@@ -134,6 +132,11 @@ header {
     letter-spacing: 4px;
 }
 
+.ava {
+    width: 300px;
+    height: 300px;
+}
+
 header h2 {
     font-size: 32px;
     font-weight: 700;
@@ -176,7 +179,8 @@ main {
     margin: 30px 0 5px 0;
 }
 
-.education p span {
+.education p span,
+.code-tasks span {
     color: #f99b0b;
 }
 
@@ -196,6 +200,55 @@ main {
     background-repeat: no-repeat;
 }
 
+.code-tasks {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.tasks {
+    width: 60%;
+    max-width: 363px;
+    height: 100px;
+    box-shadow: 1px 0px 5px 3px rgba(44, 43, 45, 0.15);
+    border-radius: 7px;
+    margin: 20px 0;
+    transition: .5s;
+}
+
+.task__video-player {
+    background-image: url(../assets/img/video-player.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.task__drum-kit {
+    background-image: url(../assets/img/drum-kit.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.task__museum-stage0 {
+    background-image: url(../assets/img/museum-stage0.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.tasks:hover {
+    box-shadow: 1px 0px 5px 3px rgba(249, 155, 11, 0.70);
+}
+
+/* section in main */
+
+section {
+    background-color: #2c2b2d;
+    color: var(--aside-color);
+    padding: 0 30px;
+    display: none;
+}
+
 /* FOOTER */
 
  footer {
@@ -203,7 +256,7 @@ main {
     margin: 0 auto 30px auto;
     padding: 15px 0px;
     font-size: 18px;
-    width: 1024px;
+    width: 90%;
 }
 
 .footer__wrapper {
