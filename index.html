@@ -8,6 +8,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +21,7 @@
     <div class="container"> 
         <div class="wrapper">
             <aside>
-                <img src="./assets/img/ava.jpeg" alt="ava" width="300" height="300">
+                <img class="ava" src="./assets/img/ava.jpeg" alt="ava">
                 <div class="aside__wrapper">
                     
                     <div class="skills">
@@ -58,17 +60,44 @@
             <main>
 
                 <header>
+                    <div class="menu__icon">
+                        <span></span>
+                    </div>
+                    <nav class="header__navigation">
+                        <ul class="header__list">
+                            <li class="header__item"><a data-goto="#anchor-myself" href="#" class="header__link">About my self</a></li>
+                            <li class="header__item"><a data-goto="#anchor-education" href="#" class="header__link">Education</a></li>
+                            <li class="header__item"><a data-goto="#anchor-courses" href="#" class="header__link">Courses</a></li>
+                            <li class="header__item"><a data-goto="#anchor-code" href="#" class="header__link">Code Example</a></li>
+                            <li class="header__item"><a data-goto="#anchor-skills" href="#" class="header__link">Skills</a></li>
+                            <li class="header__item"><a data-goto="#anchor-languages" href="#" class="header__link">Languages</a></li>
+                            <li class="header__item"><a data-goto="#anchor-contacts" href="#" class="header__link">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu__body">
+                        <ul class="header__menu-burger">
+                            <li class="header__item"><a data-goto="#anchor-myself" href="#" class="header__link">About my self</a></li>
+                            <li class="header__item"><a data-goto="#anchor-education" href="#" class="header__link">Education</a></li>
+                            <li class="header__item"><a data-goto="#anchor-courses" href="#" class="header__link">Courses</a></li>
+                            <li class="header__item"><a data-goto="#anchor-code" href="#" class="header__link">Code Example</a></li>
+                            <li class="header__item"><a data-goto="#anchor-skills" href="#" class="header__link">Skills</a></li>
+                            <li class="header__item"><a data-goto="#anchor-languages" href="#" class="header__link">Languages</a></li>
+                            <li class="header__item"><a data-goto="#anchor-contacts" href="#" class="header__link">Contacts</a></li>
+                        </ul>
+                    </div>
+
+
                     <h1>IVAN POGORELOV</h1>
                     <h2>FUTURE FRONT-END DEVELOPER</h2>
                 </header>
 
                 <div class="main__wrapper">
     
-                    <div class="about-myself">
+                    <div id="anchor-myself" class="about-myself">
                         <h3>ABOUT MY SELF</h3>
                         <p>I am 24 years old, I work as a portal administrator. My current job is not capable of giving a job in the direction in which I want to develop. Having decided to change direction, I started to study English and the basics of programming in my spare time after work to get a certificate at RS-school. I want to become a frontend developer, because my brother inspired me to be the same like he.</p>
                     </div>
-                    <div class="education">
+                    <div id="anchor-education" class="education">
                         <h3>EDUCATION</h3>
                         <strong>Taganrog Technological Institute of Southern Federal University</strong>
                         <p><span>2017 - 2021</span> Computer and Software Engineering</p>
@@ -76,7 +105,7 @@
                         <strong>Krasnodar College of Electronic Instrumentation</strong>
                         <p><span>2013 - 2017</span> Information Security Automated Systems, Information Security Technician</p>
                     </div>
-                    <div class="courses">
+                    <div  id="anchor-courses" class="courses">
                         <h3>COURSES</h3>
                         <ul class="courses__list">
                             <li class="courses__code-basics">HTML/CSS/JS Tutorials on code-basics.com</li>
@@ -84,29 +113,72 @@
                             <li class="courses__rs-school">RS Schools «JavaScript/Front-end. Stage 0»</li>
                         </ul>
                     </div>
-                    <div class="code-example">
+                    <div id="anchor-code" class="code-example">
                         <h3>CODE EXAMPLE</h3>
                         <p>My task is to rotate a matrix 90 degree to the left.</p>
-                        <pre>
-                            <code>
-                                let rotateMatrix = (arr) => {
-                                    let result = [];
-                                
-                                    for (let i = arr[0].length - 1; i >= 0; i--) {
-                                        let temp = [];
-                                        for (let j = 0; j &lt; arr.length; j++) {
-                                            temp.push(arr[j][i]);
-                                        }
-                                        result.push(temp);
-                                    }
-                                  
-                                    return result;
-                                }
-                                console.log(rotateMatrix([[-1,4,5],[2,3,4]]))
-                            </code>
-                        </pre>
+    <pre>  
+    <code>
+        let rotateMatrix = (arr) => {
+            let result = [];
+        
+            for (let i = arr[0].length - 1; i >= 0; i--) {
+                let temp = [];
+                for (let j = 0; j &lt; arr.length; j++) {
+                    temp.push(arr[j][i]);
+                }
+                result.push(temp);
+            }
+            
+            return result;
+        }
+        console.log(rotateMatrix([[-1,4,5],[2,3,4]]))
+    </code>
+    </pre>
+                    <div class="code-tasks">
+                        <p>Creating a video player using <span>JavaScript</span></p>
+                        <a href="https://rolling-scopes-school.github.io/ivan-pogorelov-JSFEPRESCHOOL/custom-video-player/" target="_blank" class="task__video-player tasks"></a>
+
+                        <p>Make a <span>JavaScript</span> Drum Kit</p>
+                        <a href="https://rolling-scopes-school.github.io/ivan-pogorelov-JSFEPRESCHOOL/drum-kit/" target="_blank" class="task__drum-kit tasks"></a>
+
+                        <p>Creating landing using <span>HTML/CSS/JS</span></p>
+                        <a href="https://rolling-scopes-school.github.io/ivan-pogorelov-JSFEPRESCHOOL/museum/" target="_blank" class="task__museum-stage0 tasks"></a>
+                    </div>
                     </div>
                 </div>
+
+                <section>
+                    
+                    <div id="anchor-skills" class="skills">
+                        <h3>SKILLS</h3>
+                        <ul class="skill__list">
+                            <li class="skills__html">HMTL</li>
+                            <li class="skills__css">CSS</li>
+                            <li class="skills__bs">Bootstrap 4</li>
+                            <li class="skills__js">JS (Basics)</li>
+                            <li class="skills__git">Git, GitHub</li>
+                            <li class="skills__figma">Figma</li>
+                            <li class="skills__vsc">Visual Studio Code</li>
+                        </ul>
+                    </div>
+                    <div id="anchor-languages" class="languages">
+                        <h3>LANGUAGES</h3>
+                        <ul class="languages__list">
+                            <li class="languages__english">A2</li>
+                            <li class="languages__russia">Native</li>
+                        </ul>
+                    </div>
+
+                    <div id="anchor-contacts" class="contacts">
+                        <h3>CONTACTS</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__vk"><a href="https://vk.com/hardayushka">Visit my VK</a></li>
+                            <li class="contacts__gmail"><a href="mailto:ivanpogorelov97a@gmail.com">Click here</a></li>
+                            <li class="contacts__discord">Ivan Pogorelov#4546</li>
+                        </ul>
+                    </div>
+    
+                </section>
 
             </main>
         </div>
@@ -115,12 +187,15 @@
     <footer>
 
         <div class="footer__wrapper">
-            <a href="https://github.com/ivan-pogorelov" class="footer__git"><img src="./assets/img/github.svg" alt="GitHub">Visit my GitHub</a>
-            <p>© 2021</p>
+            <a href="https://github.com/ivan-pogorelov" target="_blank" class="footer__git"><img src="./assets/img/github.svg" alt="GitHub">Visit my GitHub</a>
+            <h6>© 2021</h6>
             <a href="https://rs.school/js/" class="footer__logo"><img src="./assets/img/rsschool.svg" alt="logo"></a>
         </div>
         
     </footer>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="./script.js"></script>
 </body>
 </html>
