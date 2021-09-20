@@ -128,7 +128,7 @@ header {
     flex-direction: column;
     padding: 0 60px;
     margin: 75px 0;
-    height: 150px;
+    /* height: 150px; */
     background-color: #f99b0b;
     font-size: 46px;
     font-weight: 900;
@@ -142,7 +142,8 @@ header {
     align-content: center;
 }
 
-.header__list {
+.header__list,
+.header__list-aside {
     display: flex;
     font-size: 16px;
     font-weight: 400;
@@ -211,6 +212,10 @@ h3 {
     display: none;
 }
 
+.header__list-aside {
+    display: none;
+}
+
 /* MAIN */
 
 main {
@@ -220,6 +225,10 @@ main {
 
 .main__wrapper {
     padding: 0 60px;
+}
+
+.ava__without-aside {
+    display: none;
 }
 
 .main__wrapper h3 {

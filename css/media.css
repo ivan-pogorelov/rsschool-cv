@@ -16,12 +16,6 @@
     }
 }
 
-@media (max-width: 1020px) {
-    .header__list {
-        font-size: 12px;
-    }
-}
-
 @media (max-width: 992px) {
     .container {
         margin: 0 auto;
@@ -30,13 +24,13 @@
     .wrapper {
         display: block;
     }
-    header {
-        margin: 0 0 45px 0;
-        padding: 0 30px;
-        letter-spacing: 2px;
+    .ava__without-aside {
+        display: block;
     }
-    .header__list {
-        font-size: 18px;
+    header {
+        margin: 0 0 15px 0;
+        padding: 20px 30px;
+        letter-spacing: 2px;
     }
     header h1 {
         font-size: 36px;
@@ -45,6 +39,9 @@
         font-size: 22px;
     }
     aside {
+        display: none;
+    }
+    .header__list-aside {
         display: none;
     }
     section {
@@ -141,6 +138,9 @@
     .header__menu-burger li:hover a {
         color: #f99b0b;
     }
+    .ava__without-aside {
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 430px) {
@@ -157,5 +157,9 @@
     }
     .header__menu-burger li a{
         font-size: 30px;
+    }
+    .ava__without-aside {
+        width: 250px;
+        height: 250px;
     }
 }
